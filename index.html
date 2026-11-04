@@ -1,39 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Money Flow</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #1d1d1f;
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        h1 { font-size: 28px; margin-bottom: 8px; }
-        h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; }
-        p { margin-bottom: 16px; color: #333; }
-        .subtitle { color: #86868b; font-size: 14px; margin-bottom: 32px; }
-        a { color: #0066cc; }
-        ul { margin: 0 0 16px 24px; }
-        li { margin-bottom: 8px; color: #333; }
-        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e5e5; color: #86868b; font-size: 13px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MoneyFlows — Follow the money.</title>
+<meta name="description" content="See where money is moving in the market, and why. Signals, flows, news with named sources and an AI research assistant for iPhone.">
+<meta name="theme-color" content="#050505" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f2f4f6" media="(prefers-color-scheme: light)">
+<meta property="og:title" content="MoneyFlows — Follow the money.">
+<meta property="og:description" content="See where money is moving in the market, and why. Signals, flows, news with named sources and an AI research assistant for iPhone.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yrafique.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23050505'/%3E%3Cpath d='M5 11c5 0 6 3.6 11 3.6S24 11 27 11' stroke='%236bd3a4' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M5 17c5 0 6 3.6 11 3.6S24 17 27 17' stroke='%2339a36b' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M5 23c5 0 6 3.6 11 3.6S24 23 27 23' stroke='%23006241' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-    <h1>Money Flow</h1>
-    <p class="subtitle">See where money is moving in the market</p>
-    <p>Signals, money flows, news with named sources, public filings and an AI research assistant, in one app for iPhone.</p>
-    <ul>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-    </ul>
-    <div class="footer">
-        Money Flow is for information and education only and is not investment advice. This product uses the FRED&reg; API but is not endorsed or certified by the Federal Reserve Bank of St. Louis. FRED&reg; is a registered trademark of the Federal Reserve Bank of St. Louis.
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="./" aria-label="MoneyFlows home"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M3 9c6 0 7 4.5 13 4.5S26 9 29 9" stroke="#6bd3a4" stroke-width="2.6" stroke-linecap="round"/><path d="M3 16c6 0 7 4.5 13 4.5S26 16 29 16" stroke="#39a36b" stroke-width="2.6" stroke-linecap="round"/><path d="M3 23c6 0 7 4.5 13 4.5S26 23 29 23" stroke="#006241" stroke-width="2.6" stroke-linecap="round"/></svg><span>MoneyFlows</span></a>
+    <nav class="nav-links" aria-label="Main">
+      <a class="hide-s" href="support.html">Support</a>
+      <a class="hide-s" href="privacy.html">Privacy</a>
+      <a class="btn btn-primary btn-sm" href="https://apps.apple.com/us/app/id6760608278">App Store</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <p class="eyebrow">Market intelligence for iPhone</p>
+      <h1>Follow the money.</h1>
+      <p class="lede">See where money is moving in the market, and why. Signals, flows, news that names its source, and an AI research assistant, all in one quiet app.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/id6760608278">View on the App Store</a>
+        <a class="btn btn-quiet" href="#how">See how it reads</a>
+      </div>
+      <p class="fine">Research, not advice. Prices may be delayed up to about 15 minutes.</p>
     </div>
+    <div class="card reveal" style="--i:2" aria-label="Illustration of the flow screen">
+      <div class="card-head"><span class="eyebrow">Net flow &middot; 1 week</span><span class="stamp">Sample</span></div>
+      <div class="big"><span class="dir" aria-hidden="true">&#8599;</span><span>+$</span><span data-roll="4.2">4.2</span><span>B</span></div>
+      <svg class="chart" viewBox="0 0 390 170" role="img" aria-label="Sample line chart: net flow rising from about 0.3 to 4.2 billion dollars across the week">
+  <defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#39a36b" stop-opacity="0.32"/><stop offset="1" stop-color="#39a36b" stop-opacity="0"/></linearGradient></defs>
+  <line class="grid" x1="40" x2="385" y1="32" y2="32"/><line class="grid" x1="40" x2="385" y1="86" y2="86"/><line class="grid" x1="40" x2="385" y1="140" y2="140"/>
+  <text x="0" y="36">$4B</text><text x="0" y="90">$2B</text><text x="0" y="144">$0</text>
+  <path class="area" d="M48 132 L128 110 L208 89 L288 54 L368 27 L368 140 L48 140 Z"/>
+  <path class="line" pathLength="1" d="M48 132 L128 110 L208 89 L288 54 L368 27"/>
+  <text x="48" y="161" text-anchor="middle">Mon</text><text x="128" y="161" text-anchor="middle">Tue</text><text x="208" y="161" text-anchor="middle">Wed</text><text x="288" y="161" text-anchor="middle">Thu</text><text x="368" y="161" text-anchor="middle">Fri</text>
+</svg>
+      <ul class="rows">
+        <li class="reveal" style="--i:3"><span class="name">Financials</span><span class="val"><span class="up" aria-hidden="true">&#8599;</span> +$1.2B</span></li>
+        <li class="reveal" style="--i:4"><span class="name">Healthcare</span><span class="val"><span class="up" aria-hidden="true">&#8599;</span> +$1.0B</span></li>
+        <li class="reveal" style="--i:5"><span class="name">Industrials</span><span class="val"><span class="down" aria-hidden="true">&#8600;</span> &minus;$94M</span></li>
+      </ul>
+      <p class="stamp sample">Sample figures for illustration. Not live data.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="how">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow">Signals</p>
+      <h2>The market&rsquo;s unusual activity, ranked.</h2>
+      <p>Volume, price and flow are scored together, so the stocks worth a look rise to the top. Open any one and the number you saw in the list is the number on the page.</p>
+      <ul class="points"><li>One score per stock, the same everywhere</li><li>Pre-market and after-hours moves shown separately from the close</li><li>Every score explained, never a bare verdict</li></ul>
+    </div>
+    <div class="card reveal" style="--i:2" aria-label="Illustration of the signals list">
+      <div class="card-head"><span class="eyebrow">Signals</span><span class="stamp">Sample</span></div>
+      <ul class="rows">
+        <li><span style="display:flex;align-items:center;gap:.9rem"><span class="score">72</span><span><span class="name">Company A</span><br><span class="stamp">Volume 2.0&times;</span></span></span><span class="val"><span class="up" aria-hidden="true">&#8599;</span> +1.2%<span class="verdict">Bullish</span></span></li>
+        <li><span style="display:flex;align-items:center;gap:.9rem"><span class="score mid">61</span><span><span class="name">Company B</span><br><span class="stamp">Volume 1.6&times;</span></span></span><span class="val"><span class="up" aria-hidden="true">&#8599;</span> +0.4%<span class="verdict">Mixed</span></span></li>
+        <li><span style="display:flex;align-items:center;gap:.9rem"><span class="score mid">55</span><span><span class="name">Company C</span><br><span class="stamp">Volume 1.9&times;</span></span></span><span class="val"><span class="down" aria-hidden="true">&#8600;</span> &minus;0.7%<span class="verdict">Mixed</span></span></li>
+      </ul>
+      <p class="stamp sample">Sample figures for illustration. Not live data.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap split flip">
+    <div class="reveal">
+      <p class="eyebrow">Flows</p>
+      <h2>See which sectors are taking in money, and which are losing it.</h2>
+      <p>Money flow by sector and by stock over the period you pick, from one day to five years. Charts label their units, and every figure matches the period you chose.</p>
+      <ul class="points"><li>1 day to 5 years, one tap</li><li>Inflows in green, outflows in bronze, always with an arrow</li></ul>
+    </div>
+    <div class="card reveal" style="--i:2" aria-label="Illustration of sector flows">
+      <div class="card-head"><span class="eyebrow">Net flow by sector &middot; 1 day</span><span class="stamp">Sample</span></div>
+      <ul class="bars">
+        <li><span>Financials</span><span class="track"><span class="fill" style="--w:1;--i:0;display:block"></span></span><span class="num"><span class="up" aria-hidden="true">&#8599;</span> +$1.2B</span></li>
+        <li><span>Healthcare</span><span class="track"><span class="fill" style="--w:.83;--i:1;display:block"></span></span><span class="num"><span class="up" aria-hidden="true">&#8599;</span> +$1.0B</span></li>
+        <li><span>Staples</span><span class="track"><span class="fill" style="--w:.5;--i:2;display:block"></span></span><span class="num"><span class="up" aria-hidden="true">&#8599;</span> +$0.6B</span></li>
+        <li><span>Industrials</span><span class="track"><span class="fill neg" style="--w:.08;--i:3;display:block"></span></span><span class="num"><span class="down" aria-hidden="true">&#8600;</span> &minus;$94M</span></li>
+      </ul>
+      <p class="stamp sample">Sample figures for illustration. Not live data.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow">News</p>
+      <h2>Every headline names who wrote it.</h2>
+      <p>Market news from dozens of publishers, newest first, each with its publisher and time. Tap a headline and you go to their page. Filings and official releases sit alongside, clearly labelled.</p>
+      <ul class="points"><li>Publisher and time on every item</li><li>Subscription sources are marked</li></ul>
+    </div>
+    <div class="card reveal" style="--i:2" aria-label="Illustration of the news list">
+      <div class="card-head"><span class="eyebrow">News</span><span class="stamp">Sample</span></div>
+      <ul class="rows">
+        <li class="stack"><span class="name">Central bank holds rates steady, signals patience</span><span class="stamp">Publisher &middot; 12 min</span></li>
+        <li class="stack"><span class="name">Chipmaker lifts outlook after strong quarter</span><span class="stamp">Publisher &middot; 41 min</span></li>
+        <li class="stack"><span class="name">Oil edges higher as inventories fall</span><span class="stamp">Publisher &middot; 1 h</span></li>
+      </ul>
+      <p class="stamp sample">Sample headlines for illustration.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap split flip">
+    <div class="reveal">
+      <p class="eyebrow">Research desk</p>
+      <h2>Ask in plain English.</h2>
+      <p>Ask about a stock, a sector or the day. The assistant answers from the app&rsquo;s own data, shows the time it was updated, and cites the publisher of any headline it uses. It does research, not advice.</p>
+      <ul class="points"><li>Charts drawn from the same data you see elsewhere in the app</li><li>Turns off completely if you prefer</li></ul>
+    </div>
+    <div class="card reveal" style="--i:2" aria-label="Illustration of the research desk">
+      <div class="card-head"><span class="eyebrow">Research desk</span><span class="stamp">Illustration</span></div>
+      <div class="chat">
+        <div class="bubble you">Why did financials lead inflows today?</div>
+        <div class="bubble desk">Financials took the largest net inflow, with volume running above its recent average. Check the headlines below for what drove it.<br><span class="stamp">Updated 15:42 ET &middot; Research, not advice</span></div>
+      </div>
+      <p class="stamp sample">Illustration. Real answers use live app data.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap center">
+    <p class="eyebrow">Honest by design</p>
+    <h2>Numbers you can trace.</h2>
+    <p class="lede">No made-up figures. When something is missing, the app says so instead of guessing.</p>
+    <div class="trio">
+      <div class="card reveal"><span class="eyebrow">Sources</span><h3>Named, always</h3><p>Every headline shows its publisher and links to their page.</p></div>
+      <div class="card reveal" style="--i:1"><span class="eyebrow">Time</span><h3>Stamped, always</h3><p>Every figure shows when it was last updated, so you know how fresh it is.</p></div>
+      <div class="card reveal" style="--i:2"><span class="eyebrow">Delay</span><h3>Straight about it</h3><p>Prices may be delayed up to about 15 minutes. Economic data is end-of-day. Nothing is passed off as real-time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow">Privacy</p>
+      <h2>Private by default.</h2>
+      <p>No account, no ads, no tracking. Your holdings stay on your device, and in your own iCloud if you turn sync on. The AI assistant only sees your portfolio if you switch that on, and you can switch it off at any time.</p>
+      <p style="margin-top:1rem"><a href="privacy.html">Read the privacy policy</a></p>
+    </div>
+    <div class="card reveal" style="--i:2">
+      <ul class="rows" style="margin-top:0;border-top:0">
+        <li><span class="name">Account required</span><span class="val">No</span></li>
+        <li><span class="name">Ads or tracking</span><span class="val">None</span></li>
+        <li><span class="name">Portfolio shared with AI</span><span class="val">Only if you turn it on</span></li>
+        <li><span class="name">Data stays</span><span class="val">On your device</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap reveal">
+    <h2>Follow the money.</h2>
+    <div class="cta-row"><a class="btn btn-primary" href="https://apps.apple.com/us/app/id6760608278">View on the App Store</a><a class="btn btn-quiet" href="support.html">Support</a></div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="mailto:moneyflowapp@proton.me">Contact</a></div>
+    <p>MoneyFlows is for information and education only and is not investment advice. Prices may be delayed. Past activity does not predict future results.</p>
+    <p>This product uses the FRED&reg; API but is not endorsed or certified by the Federal Reserve Bank of St. Louis. FRED&reg; is a registered trademark of the Federal Reserve Bank of St. Louis.</p>
+    <p>Apple, iPhone and App Store are trademarks of Apple Inc. &copy; 2026 MoneyFlows.</p>
+  </div>
+</footer>
+<script src="site.js" defer></script>
 </body>
 </html>
