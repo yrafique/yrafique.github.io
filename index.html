@@ -3,17 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MoneyFlows — Follow the money.</title>
-<meta name="description" content="See where money is moving in the market, and why. Signals, flows, news with named sources and an AI research assistant for iPhone.">
+<title>MoneyFlows: Follow the money.</title>
+<meta name="description" content="See where money is moving in the market, and why. Ranked signals, sector flows, news that names its source and an AI research assistant, for iPhone.">
 <meta name="theme-color" content="#050505" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#f2f4f6" media="(prefers-color-scheme: light)">
-<meta property="og:title" content="MoneyFlows — Follow the money.">
-<meta property="og:description" content="See where money is moving in the market, and why. Signals, flows, news with named sources and an AI research assistant for iPhone.">
+<meta property="og:title" content="MoneyFlows: Follow the money.">
+<meta property="og:description" content="See where money is moving in the market, and why. Ranked signals, sector flows, news that names its source and an AI research assistant, for iPhone.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yrafique.github.io/">
 <meta property="og:image" content="https://yrafique.github.io/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MoneyFlows: Follow the money. Illustration of the app with sample figures.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="apple-itunes-app" content="app-id=6760608278">
 <link rel="canonical" href="https://yrafique.github.io/">
@@ -21,178 +22,236 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css">
 <script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"MoneyFlows","operatingSystem":"iOS","applicationCategory":"FinanceApplication","description":"Market research for iPhone: ranked signals, sector flows, news that names its source and an AI research assistant. Research, not advice.","url":"https://yrafique.github.io/","downloadUrl":"https://apps.apple.com/us/app/id6760608278","installUrl":"https://apps.apple.com/us/app/id6760608278","image":"https://yrafique.github.io/og.png"}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="./" aria-label="MoneyFlows home"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M3 9c6 0 7 4.5 13 4.5S26 9 29 9" stroke="#6bd3a4" stroke-width="2.6" stroke-linecap="round"/><path d="M3 16c6 0 7 4.5 13 4.5S26 16 29 16" stroke="#39a36b" stroke-width="2.6" stroke-linecap="round"/><path d="M3 23c6 0 7 4.5 13 4.5S26 23 29 23" stroke="#006241" stroke-width="2.6" stroke-linecap="round"/></svg><span>MoneyFlows</span></a>
+    <a class="brand" href="./" aria-label="MoneyFlows home"><svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true"><path d="M3 9c6 0 7 4.5 13 4.5S26 9 29 9" stroke="#6bd3a4" stroke-width="2.6" stroke-linecap="round"/><path d="M3 16c6 0 7 4.5 13 4.5S26 16 29 16" stroke="#39a36b" stroke-width="2.6" stroke-linecap="round"/><path d="M3 23c6 0 7 4.5 13 4.5S26 23 29 23" stroke="#006241" stroke-width="2.6" stroke-linecap="round"/></svg><span>MoneyFlows</span></a>
     <nav class="nav-links" aria-label="Main">
-      <a class="hide-s" href="support.html">Support</a>
+      <a href="support.html">Support</a>
       <a class="hide-s" href="privacy.html">Privacy</a>
       <a class="btn btn-primary btn-sm" href="https://apps.apple.com/us/app/id6760608278">App Store</a>
     </nav>
   </div>
 </header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7M6 9.5V20h4.5v-5.5h3V20H18V9.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+<symbol id="i-markets" viewBox="0 0 24 24"><path d="M4 20h16M7 17v-5M12 17V7M17 17v-8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m15 15 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+<symbol id="i-signals" viewBox="0 0 24 24"><path d="M13.5 3 5 13.5h6l-1 7.5L19 10.5h-6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+<symbol id="i-portfolio" viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 1 0 8.5 8.5H12z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M15 3.9A8.5 8.5 0 0 1 20.1 9H15z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+<symbol id="i-stamp" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 3.5V17A2.5 2.5 0 0 1 4 14.5z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 9h8M8 12.5h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
 <main id="main">
-<section class="hero">
+<section class="hero" aria-labelledby="hero-h">
+  <svg class="ribbon" viewBox="0 0 1200 420" width="1200" height="420" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+<path pathLength="1" d="M-20 120c260 0 300 150 600 150S960 120 1220 120" stroke="#6bd3a4"/>
+<path pathLength="1" d="M-20 200c260 0 300 150 600 150S960 200 1220 200" stroke="#39a36b"/>
+<path pathLength="1" d="M-20 280c260 0 300 150 600 150S960 280 1220 280" stroke="#006241"/>
+</svg>
   <div class="wrap hero-grid">
-    <div class="reveal">
-      <p class="eyebrow">Market intelligence for iPhone</p>
-      <h1>Follow the money.</h1>
-      <p class="lede">See where money is moving in the market, and why. Signals, flows, news that names its source, and an AI research assistant, all in one quiet app.</p>
+    <div class="hero-copy">
+      <p class="eyebrow">Market research for iPhone</p>
+      <h1 id="hero-h">Follow the money.</h1>
+      <p class="lede">See where money is moving and why: ranked signals, sector flows, news that names its source, and a research assistant that shows its work.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://apps.apple.com/us/app/id6760608278">View on the App Store</a>
-        <a class="btn btn-quiet" href="#how">See how it reads</a>
+        <a class="btn btn-primary btn-lg" href="https://apps.apple.com/us/app/id6760608278">Download on the App Store</a>
+        <a class="btn btn-quiet btn-lg" href="#tour">See how it works</a>
       </div>
       <p class="fine">Research, not advice. Prices may be delayed up to about 15 minutes.</p>
     </div>
-    <div class="card reveal" style="--i:2" aria-label="Illustration of the flow screen">
-      <div class="card-head"><span class="eyebrow">Net flow &middot; 1 week</span><span class="stamp">Sample</span></div>
-      <div class="big"><span class="dir" aria-hidden="true">&#8599;</span><span>+$</span><span data-roll="4.2">4.2</span><span>B</span></div>
-      <svg class="chart" viewBox="0 0 390 170" role="img" aria-label="Sample line chart: net flow rising from about 0.3 to 4.2 billion dollars across the week">
-  <defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#39a36b" stop-opacity="0.32"/><stop offset="1" stop-color="#39a36b" stop-opacity="0"/></linearGradient></defs>
-  <line class="grid" x1="40" x2="385" y1="32" y2="32"/><line class="grid" x1="40" x2="385" y1="86" y2="86"/><line class="grid" x1="40" x2="385" y1="140" y2="140"/>
-  <text x="0" y="36">$4B</text><text x="0" y="90">$2B</text><text x="0" y="144">$0</text>
-  <path class="area" d="M48 132 L128 110 L208 89 L288 54 L368 27 L368 140 L48 140 Z"/>
-  <path class="line" pathLength="1" d="M48 132 L128 110 L208 89 L288 54 L368 27"/>
-  <text x="48" y="161" text-anchor="middle">Mon</text><text x="128" y="161" text-anchor="middle">Tue</text><text x="208" y="161" text-anchor="middle">Wed</text><text x="288" y="161" text-anchor="middle">Thu</text><text x="368" y="161" text-anchor="middle">Fri</text>
-</svg>
-      <ul class="rows">
-        <li class="reveal" style="--i:3"><span class="name">Financials</span><span class="val"><span class="up" aria-hidden="true">&#8599;</span> +$1.2B</span></li>
-        <li class="reveal" style="--i:4"><span class="name">Healthcare</span><span class="val"><span class="up" aria-hidden="true">&#8599;</span> +$1.0B</span></li>
-        <li class="reveal" style="--i:5"><span class="name">Industrials</span><span class="val"><span class="down" aria-hidden="true">&#8600;</span> &minus;$94M</span></li>
-      </ul>
-      <p class="stamp sample">Sample figures for illustration. Not live data.</p>
-    </div>
+    <div class="hero-device h-in" style="--d:1"><figure class="shot hero-shot" id="shot-hero" data-name="Flows">
+  <div class="phone"><div class="screen"><div class="status" aria-hidden="true"><span class="clock">15:42</span><span class="island"></span><span class="sys"><i></i><i></i><i></i><i></i><em></em></span></div><div class="app"><div class="app-title"><b>Flows</b><span class="stamp">Sample &middot; 15:42 ET</span></div>
+<div class="tile">
+  <p class="app-eye">Net flow &middot; 1 week</p>
+  <p class="big"><span class="up" aria-hidden="true">&#8599;</span><span class="tab">+$<span data-roll="4.2">4.2</span>B</span></p>
+  <svg class="spark" viewBox="0 0 260 112" width="260" height="112" aria-hidden="true">
+    <line class="grid" x1="30" x2="258" y1="14" y2="14"/><line class="grid" x1="30" x2="258" y1="52" y2="52"/><line class="grid" x1="30" x2="258" y1="90" y2="90"/>
+    <text x="0" y="18">$4B</text><text x="0" y="56">$2B</text><text x="0" y="94">$0</text>
+    <path class="area" d="M36 84 L91 72 L146 61 L201 35 L252 16 L252 90 L36 90 Z"/>
+    <path class="line" pathLength="1" d="M36 84 L91 72 L146 61 L201 35 L252 16"/>
+    <circle class="dot" cx="252" cy="16" r="4"/>
+    <text x="36" y="109" text-anchor="middle">Mon</text><text x="91" y="109" text-anchor="middle">Tue</text><text x="146" y="109" text-anchor="middle">Wed</text><text x="201" y="109" text-anchor="middle">Thu</text><text x="252" y="109" text-anchor="middle">Fri</text>
+  </svg>
+</div>
+<p class="app-eye pad">By sector &middot; 1 week</p>
+<ul class="list"><li class="row" style="--i:0"><span>Technology</span><span class="tab"><span class="up" aria-hidden="true">&#8599;</span> +$1.6B</span></li><li class="row" style="--i:1"><span>Financials</span><span class="tab"><span class="up" aria-hidden="true">&#8599;</span> +$1.2B</span></li><li class="row" style="--i:2"><span>Healthcare</span><span class="tab"><span class="up" aria-hidden="true">&#8599;</span> +$1.0B</span></li><li class="row" style="--i:3"><span>Industrials</span><span class="tab"><span class="up" aria-hidden="true">&#8599;</span> +$0.5B</span></li><li class="row" style="--i:4"><span>Energy</span><span class="tab"><span class="down" aria-hidden="true">&#8600;</span> &minus;$0.1B</span></li></ul>
+<p class="app-note">Updated 15:42 ET &middot; Delayed up to ~15 min</p></div><div class="tabs" aria-hidden="true"><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-home"/></svg><b>Home</b></span><span class="on"><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-markets"/></svg><b>Markets</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-search"/></svg><b>Search</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-signals"/></svg><b>Signals</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-portfolio"/></svg><b>Portfolio</b></span></div></div></div>
+  <figcaption class="stamp">Sample figures for illustration. Not live data.</figcaption>
+</figure></div>
   </div>
 </section>
 
-<section class="block" id="how">
-  <div class="wrap split">
-    <div class="reveal">
-      <p class="eyebrow">Signals</p>
-      <h2>The market&rsquo;s unusual activity, ranked.</h2>
-      <p>Volume, price and flow are scored together, so the stocks worth a look rise to the top. Open any one and the number you saw in the list is the number on the page.</p>
-      <ul class="points"><li>One score per stock, the same everywhere</li><li>Pre-market and after-hours moves shown separately from the close</li><li>Every score explained, never a bare verdict</li></ul>
-    </div>
-    <div class="card reveal" style="--i:2" aria-label="Illustration of the signals list">
-      <div class="card-head"><span class="eyebrow">Signals</span><span class="stamp">Sample</span></div>
-      <ul class="rows">
-        <li><span style="display:flex;align-items:center;gap:.9rem"><span class="score">72</span><span><span class="name">Company A</span><br><span class="stamp">Volume 2.0&times;</span></span></span><span class="val"><span class="up" aria-hidden="true">&#8599;</span> +1.2%<span class="verdict">Bullish</span></span></li>
-        <li><span style="display:flex;align-items:center;gap:.9rem"><span class="score mid">61</span><span><span class="name">Company B</span><br><span class="stamp">Volume 1.6&times;</span></span></span><span class="val"><span class="up" aria-hidden="true">&#8599;</span> +0.4%<span class="verdict">Mixed</span></span></li>
-        <li><span style="display:flex;align-items:center;gap:.9rem"><span class="score mid">55</span><span><span class="name">Company C</span><br><span class="stamp">Volume 1.9&times;</span></span></span><span class="val"><span class="down" aria-hidden="true">&#8600;</span> &minus;0.7%<span class="verdict">Mixed</span></span></li>
-      </ul>
-      <p class="stamp sample">Sample figures for illustration. Not live data.</p>
-    </div>
-  </div>
-</section>
-
-<section class="block">
-  <div class="wrap split flip">
-    <div class="reveal">
-      <p class="eyebrow">Flows</p>
-      <h2>See which sectors are taking in money, and which are losing it.</h2>
-      <p>Money flow by sector and by stock over the period you pick, from one day to five years. Charts label their units, and every figure matches the period you chose.</p>
-      <ul class="points"><li>1 day to 5 years, one tap</li><li>Inflows in green, outflows in bronze, always with an arrow</li></ul>
-    </div>
-    <div class="card reveal" style="--i:2" aria-label="Illustration of sector flows">
-      <div class="card-head"><span class="eyebrow">Net flow by sector &middot; 1 day</span><span class="stamp">Sample</span></div>
-      <ul class="bars">
-        <li><span>Financials</span><span class="track"><span class="fill" style="--w:1;--i:0;display:block"></span></span><span class="num"><span class="up" aria-hidden="true">&#8599;</span> +$1.2B</span></li>
-        <li><span>Healthcare</span><span class="track"><span class="fill" style="--w:.83;--i:1;display:block"></span></span><span class="num"><span class="up" aria-hidden="true">&#8599;</span> +$1.0B</span></li>
-        <li><span>Staples</span><span class="track"><span class="fill" style="--w:.5;--i:2;display:block"></span></span><span class="num"><span class="up" aria-hidden="true">&#8599;</span> +$0.6B</span></li>
-        <li><span>Industrials</span><span class="track"><span class="fill neg" style="--w:.08;--i:3;display:block"></span></span><span class="num"><span class="down" aria-hidden="true">&#8600;</span> &minus;$94M</span></li>
-      </ul>
-      <p class="stamp sample">Sample figures for illustration. Not live data.</p>
-    </div>
-  </div>
-</section>
-
-<section class="block">
-  <div class="wrap split">
-    <div class="reveal">
-      <p class="eyebrow">News</p>
-      <h2>Every headline names who wrote it.</h2>
-      <p>Market news from dozens of publishers, newest first, each with its publisher and time. Tap a headline and you go to their page. Filings and official releases sit alongside, clearly labelled.</p>
-      <ul class="points"><li>Publisher and time on every item</li><li>Subscription sources are marked</li></ul>
-    </div>
-    <div class="card reveal" style="--i:2" aria-label="Illustration of the news list">
-      <div class="card-head"><span class="eyebrow">News</span><span class="stamp">Sample</span></div>
-      <ul class="rows">
-        <li class="stack"><span class="name">Central bank holds rates steady, signals patience</span><span class="stamp">Publisher &middot; 12 min</span></li>
-        <li class="stack"><span class="name">Chipmaker lifts outlook after strong quarter</span><span class="stamp">Publisher &middot; 41 min</span></li>
-        <li class="stack"><span class="name">Oil edges higher as inventories fall</span><span class="stamp">Publisher &middot; 1 h</span></li>
-      </ul>
-      <p class="stamp sample">Sample headlines for illustration.</p>
-    </div>
-  </div>
-</section>
-
-<section class="block">
-  <div class="wrap split flip">
-    <div class="reveal">
-      <p class="eyebrow">Research desk</p>
-      <h2>Ask in plain English.</h2>
-      <p>Ask about a stock, a sector or the day. The assistant answers from the app&rsquo;s own data, shows the time it was updated, and cites the publisher of any headline it uses. It does research, not advice.</p>
-      <ul class="points"><li>Charts drawn from the same data you see elsewhere in the app</li><li>Turns off completely if you prefer</li></ul>
-    </div>
-    <div class="card reveal" style="--i:2" aria-label="Illustration of the research desk">
-      <div class="card-head"><span class="eyebrow">Research desk</span><span class="stamp">Illustration</span></div>
-      <div class="chat">
-        <div class="bubble you">Why did financials lead inflows today?</div>
-        <div class="bubble desk">Financials took the largest net inflow, with volume running above its recent average. Check the headlines below for what drove it.<br><span class="stamp">Updated 15:42 ET &middot; Research, not advice</span></div>
-      </div>
-      <p class="stamp sample">Illustration. Real answers use live app data.</p>
-    </div>
-  </div>
-</section>
-
-<section class="block">
-  <div class="wrap center">
-    <p class="eyebrow">Honest by design</p>
-    <h2>Numbers you can trace.</h2>
-    <p class="lede">No made-up figures. When something is missing, the app says so instead of guessing.</p>
+<section class="pillars" aria-labelledby="pill-h">
+  <div class="wrap">
+    <h2 id="pill-h" class="sr">What you get</h2>
     <div class="trio">
-      <div class="card reveal"><span class="eyebrow">Sources</span><h3>Named, always</h3><p>Every headline shows its publisher and links to their page.</p></div>
-      <div class="card reveal" style="--i:1"><span class="eyebrow">Time</span><h3>Stamped, always</h3><p>Every figure shows when it was last updated, so you know how fresh it is.</p></div>
-      <div class="card reveal" style="--i:2"><span class="eyebrow">Delay</span><h3>Straight about it</h3><p>Prices may be delayed up to about 15 minutes. Economic data is end-of-day. Nothing is passed off as real-time.</p></div>
+      <div class="pillar reveal"><svg class="ico lg" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-eye"/></svg><p class="eyebrow">See it</p><h3>Signals and flows</h3><p>Unusual activity ranked by one score, and sector flows from one day to five years on charts that label their units.</p></div>
+      <div class="pillar reveal" style="--i:1"><svg class="ico lg" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-stamp"/></svg><p class="eyebrow">Trust it</p><h3>Named sources, stamped times</h3><p>Every headline names its publisher. Every figure shows when it was updated. Missing data is shown as missing.</p></div>
+      <div class="pillar reveal" style="--i:2"><svg class="ico lg" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-chat"/></svg><p class="eyebrow">Ask it</p><h3>A research desk in plain English</h3><p>Ask about a stock, a sector or the day. Answers come from the app&rsquo;s own data and cite what they use.</p></div>
     </div>
   </div>
 </section>
 
-<section class="block">
+<section class="tour-sec" id="tour" aria-labelledby="tour-h">
+  <div class="wrap">
+    <div class="sec-head reveal"><p class="eyebrow">A tour of the app</p><h2 id="tour-h">Five screens. One quiet instrument.</h2></div>
+    <div class="tour"><article class="chap" id="ch-signals" data-i="0" style="--o:1">
+  <p class="eyebrow"><span class="num tab">01</span> Signals</p>
+  <h3>Unusual activity, ranked.</h3><p>Volume, price and flow are scored together, so the stocks worth a closer look rise to the top.</p><ul class="points"><li>One score per stock, the same number on every screen</li><li>Pre-market and after-hours moves kept apart from the close</li><li>Every score explained, never a bare verdict</li></ul>
+</article><article class="chap" id="ch-flows" data-i="1" style="--o:3">
+  <p class="eyebrow"><span class="num tab">02</span> Flows</p>
+  <h3>See where the money moved.</h3><p>Net flow by sector over the period you choose, from one day to five years. Axes carry their units, and every figure matches the period on screen.</p><ul class="points"><li>Six periods, one tap each. Try them on the phone</li><li>Inflows in green, outflows in bronze, always with an arrow</li></ul>
+</article><article class="chap" id="ch-news" data-i="2" style="--o:5">
+  <p class="eyebrow"><span class="num tab">03</span> News</p>
+  <h3>Every headline names its source.</h3><p>Market news from about 50 publishers, newest first. Each item shows who published it and when, and opens the publisher&rsquo;s own page.</p><ul class="points"><li>Publisher and time on every headline</li><li>Subscription sources are marked before you tap</li><li>Public filings sit alongside, clearly labelled</li></ul>
+</article><article class="chap" id="ch-desk" data-i="3" style="--o:7">
+  <p class="eyebrow"><span class="num tab">04</span> Research desk</p>
+  <h3>Ask in plain English.</h3><p>Ask about a stock, a sector or the day. The assistant answers from the data the app has loaded, stamps when it was updated and cites the publisher of any headline it uses.</p><ul class="points"><li>Shows its sources and its time</li><li>Research, not advice</li><li>Turns off completely if you prefer</li></ul>
+</article><article class="chap" id="ch-portfolio" data-i="4" style="--o:9">
+  <p class="eyebrow"><span class="num tab">05</span> Portfolio</p>
+  <h3>Your holdings stay on your iPhone.</h3><p>Track what you own with risk measures that state their period. Nothing is uploaded to us, and there is no account.</p><ul class="points"><li>Stored on your device, or your own iCloud if you turn sync on</li><li>AI review is opt-in, and off by default</li><li>Every risk figure labelled with its period</li></ul>
+</article><div class="device"><figure data-i="0" style="--o:2" class="shot " id="shot-signals" data-name="Signals">
+  <div class="phone"><div class="screen"><div class="status" aria-hidden="true"><span class="clock">15:42</span><span class="island"></span><span class="sys"><i></i><i></i><i></i><i></i><em></em></span></div><div class="app"><div class="app-title"><b>Signals</b><span class="stamp">Updated 15:42 ET</span></div>
+<div class="chips" aria-hidden="true"><span class="on">Unusual activity</span><span>Today</span></div>
+<ul class="list sig"><li class="row" style="--i:0"><span class="ring" style="--s:84"><svg viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><circle class="rt" cx="18" cy="18" r="15.5" pathLength="100"/><circle class="rv" cx="18" cy="18" r="15.5" pathLength="100"/></svg><b class="tab">84</b><span class="sr"> score</span></span><span class="who"><b>Company A</b><span class="stamp">Technology &middot; 2.4&times; vol</span></span><span class="tab chg"><span class="up" aria-hidden="true">&#8599;</span> +3.1%</span></li><li class="row" style="--i:1"><span class="ring" style="--s:72"><svg viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><circle class="rt" cx="18" cy="18" r="15.5" pathLength="100"/><circle class="rv" cx="18" cy="18" r="15.5" pathLength="100"/></svg><b class="tab">72</b><span class="sr"> score</span></span><span class="who"><b>Company B</b><span class="stamp">Financials &middot; 2.0&times; vol</span></span><span class="tab chg"><span class="up" aria-hidden="true">&#8599;</span> +1.2%</span></li><li class="row" style="--i:2"><span class="ring" style="--s:66"><svg viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><circle class="rt" cx="18" cy="18" r="15.5" pathLength="100"/><circle class="rv" cx="18" cy="18" r="15.5" pathLength="100"/></svg><b class="tab">66</b><span class="sr"> score</span></span><span class="who"><b>Company C</b><span class="stamp">Healthcare &middot; 1.8&times; vol</span></span><span class="tab chg"><span class="up" aria-hidden="true">&#8599;</span> +0.8%</span></li><li class="row" style="--i:3"><span class="ring" style="--s:58"><svg viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><circle class="rt" cx="18" cy="18" r="15.5" pathLength="100"/><circle class="rv" cx="18" cy="18" r="15.5" pathLength="100"/></svg><b class="tab">58</b><span class="sr"> score</span></span><span class="who"><b>Company D</b><span class="stamp">Energy &middot; 1.6&times; vol</span></span><span class="tab chg"><span class="down" aria-hidden="true">&#8600;</span> &minus;0.7%</span></li><li class="row" style="--i:4"><span class="ring" style="--s:51"><svg viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><circle class="rt" cx="18" cy="18" r="15.5" pathLength="100"/><circle class="rv" cx="18" cy="18" r="15.5" pathLength="100"/></svg><b class="tab">51</b><span class="sr"> score</span></span><span class="who"><b>Company E</b><span class="stamp">Industrials &middot; 1.4&times; vol</span></span><span class="tab chg"><span class="up" aria-hidden="true">&#8599;</span> +0.3%</span></li><li class="row" style="--i:5"><span class="ring" style="--s:47"><svg viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><circle class="rt" cx="18" cy="18" r="15.5" pathLength="100"/><circle class="rv" cx="18" cy="18" r="15.5" pathLength="100"/></svg><b class="tab">47</b><span class="sr"> score</span></span><span class="who"><b>Company F</b><span class="stamp">Utilities &middot; 1.3&times; vol</span></span><span class="tab chg"><span class="up" aria-hidden="true">&#8599;</span> +0.2%</span></li><li class="row" style="--i:6"><span class="ring" style="--s:44"><svg viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><circle class="rt" cx="18" cy="18" r="15.5" pathLength="100"/><circle class="rv" cx="18" cy="18" r="15.5" pathLength="100"/></svg><b class="tab">44</b><span class="sr"> score</span></span><span class="who"><b>Company G</b><span class="stamp">Staples &middot; 1.2&times; vol</span></span><span class="tab chg"><span class="down" aria-hidden="true">&#8600;</span> &minus;0.4%</span></li></ul>
+<p class="app-note">One score per stock, the same on every screen.</p></div><div class="tabs" aria-hidden="true"><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-home"/></svg><b>Home</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-markets"/></svg><b>Markets</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-search"/></svg><b>Search</b></span><span class="on"><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-signals"/></svg><b>Signals</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-portfolio"/></svg><b>Portfolio</b></span></div></div></div>
+  <figcaption class="stamp">Sample figures for illustration. Not live data.</figcaption>
+</figure><figure data-i="1" style="--o:4" class="shot " id="shot-flows" data-name="Flows">
+  <div class="phone"><div class="screen"><div class="status" aria-hidden="true"><span class="clock">15:42</span><span class="island"></span><span class="sys"><i></i><i></i><i></i><i></i><em></em></span></div><div class="app"><div class="app-title"><b>Flows</b><span class="stamp">Updated 15:42 ET</span></div>
+<div class="periods" role="group" aria-label="Period"><button type="button" data-p="1D" aria-pressed="false">1D</button><button type="button" data-p="1W" aria-pressed="true">1W</button><button type="button" data-p="1M" aria-pressed="false">1M</button><button type="button" data-p="3M" aria-pressed="false">3M</button><button type="button" data-p="1Y" aria-pressed="false">1Y</button><button type="button" data-p="5Y" aria-pressed="false">5Y</button></div>
+<div class="tile ftot"><span class="app-eye">All sectors &middot; <span class="pname">1W</span></span><b class="tab ftotal"><span class="up" aria-hidden="true">&#8599;</span> +$6.2B</b></div>
+<p class="app-eye pad">By sector, US$ &middot; <span class="pname">1W</span></p>
+<ul class="flows" data-flows='{"sectors":["Technology","Financials","Healthcare","Industrials","Utilities","Energy"],"periods":{"1D":[0.8,1.2,1.0,-0.09,0.2,-0.3],"1W":[3.1,2.4,1.6,0.4,-0.2,-1.1],"1M":[9.8,6.2,4.1,2.2,-1.4,-3.5],"3M":[21,14,8.5,5.1,3.0,-9.2],"1Y":[64,38,22,12,-6.5,-31],"5Y":[210,96,71,35,18,-88]}}'><li style="--i:0"><span class="fname">Technology</span><span class="ftrack"><i class="fneg" style="--w:0.000"></i><i class="fpos" style="--w:0.620"></i></span><span class="fval"><span class="up" aria-hidden="true">&#8599;</span> <span class="fnum">+$3.1B</span></span></li><li style="--i:1"><span class="fname">Financials</span><span class="ftrack"><i class="fneg" style="--w:0.000"></i><i class="fpos" style="--w:0.480"></i></span><span class="fval"><span class="up" aria-hidden="true">&#8599;</span> <span class="fnum">+$2.4B</span></span></li><li style="--i:2"><span class="fname">Healthcare</span><span class="ftrack"><i class="fneg" style="--w:0.000"></i><i class="fpos" style="--w:0.320"></i></span><span class="fval"><span class="up" aria-hidden="true">&#8599;</span> <span class="fnum">+$1.6B</span></span></li><li style="--i:3"><span class="fname">Industrials</span><span class="ftrack"><i class="fneg" style="--w:0.000"></i><i class="fpos" style="--w:0.080"></i></span><span class="fval"><span class="up" aria-hidden="true">&#8599;</span> <span class="fnum">+$400M</span></span></li><li style="--i:4"><span class="fname">Utilities</span><span class="ftrack"><i class="fneg" style="--w:0.080"></i><i class="fpos" style="--w:0.000"></i></span><span class="fval"><span class="down" aria-hidden="true">&#8600;</span> <span class="fnum">&minus;$200M</span></span></li><li style="--i:5"><span class="fname">Energy</span><span class="ftrack"><i class="fneg" style="--w:0.440"></i><i class="fpos" style="--w:0.000"></i></span><span class="fval"><span class="down" aria-hidden="true">&#8600;</span> <span class="fnum">&minus;$1.1B</span></span></li></ul>
+<div class="axis" aria-hidden="true"><span class="ticks"><span style="--x:0">&minus;$2.5B</span><span style="--x:1">$0</span><span style="--x:2">+$2.5B</span><span style="--x:3">+$5B</span></span></div>
+<p class="app-note"><span class="up" aria-hidden="true">&#8599;</span> inflow &nbsp; <span class="down" aria-hidden="true">&#8600;</span> outflow, always with an arrow.</p></div><div class="tabs" aria-hidden="true"><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-home"/></svg><b>Home</b></span><span class="on"><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-markets"/></svg><b>Markets</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-search"/></svg><b>Search</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-signals"/></svg><b>Signals</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-portfolio"/></svg><b>Portfolio</b></span></div></div></div>
+  <figcaption class="stamp">Sample figures for illustration. Not live data.</figcaption>
+</figure><figure data-i="2" style="--o:6" class="shot " id="shot-news" data-name="News">
+  <div class="phone"><div class="screen"><div class="status" aria-hidden="true"><span class="clock">15:42</span><span class="island"></span><span class="sys"><i></i><i></i><i></i><i></i><em></em></span></div><div class="app"><div class="app-title"><b>News</b><span class="stamp">Newest first</span></div>
+<div class="chips" aria-hidden="true"><span class="on">Market</span><span>Watchlist</span><span>Filings</span></div>
+<ul class="list"><li class="row news" style="--i:0"><b>Central bank holds rates steady, signals patience</b><span class="stamp">Publisher A &middot; 12 min</span></li><li class="row news" style="--i:1"><b>Chipmaker lifts full-year outlook after strong quarter</b><span class="stamp">Publisher B &middot; 41 min</span><span class="sub"><svg class="ico xs" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>Subscription</span></li><li class="row news" style="--i:2"><b>Oil edges higher as weekly inventories fall</b><span class="stamp">Publisher C &middot; 1 h</span></li><li class="row news" style="--i:3"><b>Company D files quarterly report</b><span class="stamp">Public filing &middot; 2 h</span></li><li class="row news" style="--i:4"><b>Treasury yields slip after jobs data</b><span class="stamp">Publisher D &middot; 3 h</span></li></ul>
+<p class="app-note">Sample headlines. Tap one to open the publisher&rsquo;s page.</p></div><div class="tabs" aria-hidden="true"><span class="on"><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-home"/></svg><b>Home</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-markets"/></svg><b>Markets</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-search"/></svg><b>Search</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-signals"/></svg><b>Signals</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-portfolio"/></svg><b>Portfolio</b></span></div></div></div>
+  <figcaption class="stamp">Sample figures for illustration. Not live data.</figcaption>
+</figure><figure data-i="3" style="--o:8" class="shot " id="shot-desk" data-name="Research desk">
+  <div class="phone"><div class="screen"><div class="status" aria-hidden="true"><span class="clock">15:42</span><span class="island"></span><span class="sys"><i></i><i></i><i></i><i></i><em></em></span></div><div class="app"><div class="app-title"><b>Research</b><span class="stamp">Research desk</span></div>
+<div class="chat">
+  <p class="bubble you">Why did financials lead inflows this week?</p>
+  <div class="bubble desk"><p class="typed"><span class="w">Financials</span> <span class="w">took</span> <span class="w">the</span> <span class="w">largest</span> <span class="w">net</span> <span class="w">inflow</span> <span class="w">this</span> <span class="w">week,</span> <span class="w">about</span> <span class="w">$1.2B</span> <span class="w">in</span> <span class="w">this</span> <span class="w">sample,</span> <span class="w">with</span> <span class="w">volume</span> <span class="w">running</span> <span class="w">above</span> <span class="w">its</span> <span class="w">20-day</span> <span class="w">average.</span> <span class="w">Two</span> <span class="w">headlines</span> <span class="w">point</span> <span class="w">to</span> <span class="w">rate</span> <span class="w">expectations</span> <span class="w">as</span> <span class="w">the</span> <span class="w">driver.</span></p>
+    <p class="cite stamp">Sources: Publisher A &middot; Publisher C</p>
+    <p class="stamp">Updated 15:42 ET &middot; Research, not advice</p></div>
+</div>
+<div class="suggest" aria-hidden="true"><span>Show the headlines</span><span>Compare with healthcare</span></div>
+<div class="composer" aria-hidden="true">Ask about a stock or sector</div></div><div class="tabs" aria-hidden="true"><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-home"/></svg><b>Home</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-markets"/></svg><b>Markets</b></span><span class="on"><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-search"/></svg><b>Search</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-signals"/></svg><b>Signals</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-portfolio"/></svg><b>Portfolio</b></span></div></div></div>
+  <figcaption class="stamp">Illustration. Real answers use the app&rsquo;s own data.</figcaption>
+</figure><figure data-i="4" style="--o:10" class="shot " id="shot-portfolio" data-name="Portfolio">
+  <div class="phone"><div class="screen"><div class="status" aria-hidden="true"><span class="clock">15:42</span><span class="island"></span><span class="sys"><i></i><i></i><i></i><i></i><em></em></span></div><div class="app"><div class="app-title"><b>Portfolio</b><span class="badge"><svg class="ico xs" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg>On this iPhone</span></div>
+<ul class="list hold"><li class="row" style="--i:0"><span>Holding A</span><span class="tab">28%</span></li><li class="row" style="--i:1"><span>Holding B</span><span class="tab">22%</span></li><li class="row" style="--i:2"><span>Holding C</span><span class="tab">14%</span></li><li class="row" style="--i:3"><span>Holding D</span><span class="tab">13%</span></li><li class="row" style="--i:4"><span>Holding E</span><span class="tab">11%</span></li><li class="row" style="--i:5"><span>Cash</span><span class="tab">12%</span></li></ul>
+<div class="risks"><div class="risk row" style="--i:2"><span class="app-eye">Beta &middot; 1Y</span><b class="tab">1.08</b></div><div class="risk row" style="--i:3"><span class="app-eye">Volatility &middot; 1Y</span><b class="tab">18.4%</b></div><div class="risk row" style="--i:4"><span class="app-eye">Drawdown &middot; 1Y</span><b class="tab"><span class="down" aria-hidden="true">&#8600;</span> &minus;12.6%</b></div><div class="risk row" style="--i:5"><span class="app-eye">Top 3 weight</span><b class="tab">64%</b></div></div>
+<div class="optin"><span><b>AI review</b><span class="stamp">Off until you turn it on</span></span><span class="switch" aria-hidden="true"><i></i></span><span class="sr">Off</span></div></div><div class="tabs" aria-hidden="true"><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-home"/></svg><b>Home</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-markets"/></svg><b>Markets</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-search"/></svg><b>Search</b></span><span class=""><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-signals"/></svg><b>Signals</b></span><span class="on"><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-portfolio"/></svg><b>Portfolio</b></span></div></div></div>
+  <figcaption class="stamp">Sample figures for illustration. Not live data.</figcaption>
+</figure></div></div>
+  </div>
+</section>
+
+<section class="block" id="honest" aria-labelledby="honest-h">
   <div class="wrap split">
     <div class="reveal">
-      <p class="eyebrow">Privacy</p>
-      <h2>Private by default.</h2>
-      <p>No account, no ads, no tracking. Your holdings stay on your device, and in your own iCloud if you turn sync on. The AI assistant only sees your portfolio if you switch that on, and you can switch it off at any time.</p>
-      <p style="margin-top:1rem"><a href="privacy.html">Read the privacy policy</a></p>
+      <p class="eyebrow">Honest by design</p>
+      <h2 id="honest-h">Numbers you can trace.</h2>
+      <p>No made-up figures and no quiet guesses. Every number in the app tells you where it came from and when.</p>
+      <ul class="checks">
+        <li><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span><b>Named sources.</b> Every headline shows its publisher and links to their page.</span></li>
+        <li><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span><b>Stamped times.</b> Every figure shows when it was last updated.</span></li>
+        <li><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span><b>Straight about delay.</b> Prices may be delayed up to about 15 minutes. Economic data is end-of-day.</span></li>
+        <li><svg class="ico" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span><b>Missing means missing.</b> When a figure isn&rsquo;t available, the app says so instead of guessing.</span></li>
+      </ul>
     </div>
-    <div class="card reveal" style="--i:2">
-      <ul class="rows" style="margin-top:0;border-top:0">
-        <li><span class="name">Account required</span><span class="val">No</span></li>
-        <li><span class="name">Ads or tracking</span><span class="val">None</span></li>
-        <li><span class="name">Portfolio shared with AI</span><span class="val">Only if you turn it on</span></li>
-        <li><span class="name">Data stays</span><span class="val">On your device</span></li>
+    <figure class="card specimen reveal" style="--i:2">
+      <p class="eyebrow">How a figure reads</p>
+      <div class="spec-row"><span class="spec-k">Net flow &middot; 1W</span><span class="spec-v tab"><span class="up" aria-hidden="true">&#8599;</span> +$1.2B</span></div>
+      <div class="spec-tags"><span class="stamp">Updated 15:42 ET</span><span class="stamp">Delayed up to ~15 min</span></div>
+      <div class="spec-row"><span class="spec-k">Headline</span><span class="spec-v">Central bank holds rates steady</span></div>
+      <div class="spec-tags"><span class="stamp">Publisher A &middot; 12 min</span></div>
+      <div class="spec-row"><span class="spec-k">Dividend yield</span><span class="spec-v muted">Not available</span></div>
+      <div class="spec-tags"><span class="stamp">Shown as missing, never estimated</span></div>
+      <figcaption class="stamp">Sample figures for illustration. Not live data.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="private" aria-labelledby="priv-h">
+  <div class="wrap split flip">
+    <div class="reveal">
+      <p class="eyebrow">Private by default</p>
+      <h2 id="priv-h">Your money is your business.</h2>
+      <p>No account, no ads, no tracking. Your holdings stay on your iPhone, and in your own iCloud if you turn sync on. The AI assistant sees your portfolio only if you switch that on, and you can switch it off at any time.</p>
+      <p class="more"><a href="privacy.html">Read the privacy policy</a></p>
+    </div>
+    <div class="card privacy-card reveal" style="--i:2">
+      <div class="lockup"><svg class="ico xl" width="24" height="24" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg></div>
+      <ul class="facts">
+        <li><span>Account required</span><b>None</b></li>
+        <li><span>Ads or tracking</span><b>None</b></li>
+        <li><span>Where holdings live</span><b>On your iPhone</b></li>
+        <li><span>Portfolio shared with AI</span><b>Only if you turn it on</b></li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="cta-band">
+<section class="block" id="who" aria-labelledby="who-h">
+  <div class="wrap">
+    <div class="sec-head reveal"><p class="eyebrow">Who it&rsquo;s for</p><h2 id="who-h">For people who make their own calls.</h2>
+    <p class="lede">Self-directed investors and traders who want context, not tips.</p></div>
+    <div class="trio">
+      <div class="card who reveal"><h3>You want the why</h3><p>Not just that a stock moved, but where the money went and what was said about it.</p></div>
+      <div class="card who reveal" style="--i:1"><h3>You check the source</h3><p>You&rsquo;d rather see the publisher and the timestamp than take anyone&rsquo;s word for it.</p></div>
+      <div class="card who reveal" style="--i:2"><h3>You decide</h3><p>MoneyFlows isn&rsquo;t a broker or a tip sheet. It does research, and the decisions stay yours.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq" aria-labelledby="faq-h">
+  <div class="wrap faq-grid">
+    <div class="reveal"><p class="eyebrow">Questions</p><h2 id="faq-h">Good to know.</h2><p class="lede">Anything else? <a href="support.html">Visit support</a>.</p></div>
+    <div class="faq"><details><summary>Is the data real-time?</summary><p>No. Prices may be delayed up to about 15 minutes, and economic data is end-of-day. Every screen shows the time its data was last updated, so you always know how fresh it is.</p></details><details><summary>Where does the data come from?</summary><p>Market data, public regulatory filings and economic data come from third-party providers. Every headline names its publisher and opens the publisher&rsquo;s own page. Economic data from the Federal Reserve is credited to it.</p></details><details><summary>Do I need an account?</summary><p>No. There is no sign-up and no account. Open the app and start reading.</p></details><details><summary>Is my portfolio private?</summary><p>Yes. Holdings stay on your iPhone, and in your own iCloud if you turn sync on. We don&rsquo;t receive them. The AI assistant only sees your portfolio if you switch on portfolio sharing in Settings.</p></details><details><summary>How does the AI research assistant work?</summary><p>It is an AI language model that answers from the market data and headlines the app has already loaded. Some analysis runs on your device; otherwise your question and the relevant market context are sent over an encrypted connection to an AI service to write the answer. It shows when its data was updated and which publishers it used. It can be wrong, and you can turn it off.</p></details><details><summary>Is this investment advice?</summary><p>No. MoneyFlows is a research tool for information and education. Scores, signals and AI answers are not recommendations. Do your own research and consider a licensed professional.</p></details><details><summary>Which devices does it run on?</summary><p>MoneyFlows is an iPhone app. The App Store page lists the iOS version it needs.</p></details><details><summary>How do I contact support?</summary><p>Email <a href="mailto:moneyflowapp@proton.me">moneyflowapp@proton.me</a>. Include your iPhone model, iOS version and app version, and we&rsquo;ll get back to you.</p></details></div>
+  </div>
+</section>
+
+<section class="cta-band" id="get" aria-labelledby="get-h">
+  <svg class="ribbon r2" viewBox="0 0 1200 420" width="1200" height="420" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+<path pathLength="1" d="M-20 120c260 0 300 150 600 150S960 120 1220 120" stroke="#6bd3a4"/>
+<path pathLength="1" d="M-20 200c260 0 300 150 600 150S960 200 1220 200" stroke="#39a36b"/>
+<path pathLength="1" d="M-20 280c260 0 300 150 600 150S960 280 1220 280" stroke="#006241"/>
+</svg>
   <div class="wrap reveal">
-    <h2>Follow the money.</h2>
-    <div class="cta-row"><a class="btn btn-primary" href="https://apps.apple.com/us/app/id6760608278">View on the App Store</a><a class="btn btn-quiet" href="support.html">Support</a></div>
+    <svg viewBox="0 0 32 32" width="56" height="56" class="cta-glyph" fill="none" aria-hidden="true"><path d="M3 9c6 0 7 4.5 13 4.5S26 9 29 9" stroke="#6bd3a4" stroke-width="2.6" stroke-linecap="round"/><path d="M3 16c6 0 7 4.5 13 4.5S26 16 29 16" stroke="#39a36b" stroke-width="2.6" stroke-linecap="round"/><path d="M3 23c6 0 7 4.5 13 4.5S26 23 29 23" stroke="#006241" stroke-width="2.6" stroke-linecap="round"/></svg>
+    <h2 id="get-h">Follow the money.</h2>
+    <p class="lede">MoneyFlows for iPhone. No account needed.</p>
+    <div class="cta-row"><a class="btn btn-primary btn-lg" href="https://apps.apple.com/us/app/id6760608278">Download on the App Store</a></div>
+    <p class="fine">Research, not advice. Prices may be delayed up to about 15 minutes.</p>
   </div>
 </section>
 </main>
+
+<div class="dock" id="dock" aria-label="Get the app" role="region">
+  <span class="dock-id"><svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true"><path d="M3 9c6 0 7 4.5 13 4.5S26 9 29 9" stroke="#6bd3a4" stroke-width="2.6" stroke-linecap="round"/><path d="M3 16c6 0 7 4.5 13 4.5S26 16 29 16" stroke="#39a36b" stroke-width="2.6" stroke-linecap="round"/><path d="M3 23c6 0 7 4.5 13 4.5S26 23 29 23" stroke="#006241" stroke-width="2.6" stroke-linecap="round"/></svg><span><b>MoneyFlows</b><span>Follow the money.</span></span></span>
+  <a class="btn btn-primary btn-sm" href="https://apps.apple.com/us/app/id6760608278">App Store</a>
+  <button class="dock-x" type="button" aria-label="Hide download bar"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="m2 2 10 10M12 2 2 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+</div>
 <footer>
   <div class="wrap">
-    <div class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="mailto:moneyflowapp@proton.me">Contact</a></div>
-    <p>MoneyFlows is for information and education only and is not investment advice. Prices may be delayed. Past activity does not predict future results.</p>
+    <div class="foot-top"><a class="brand" href="./" aria-label="MoneyFlows home"><svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true"><path d="M3 9c6 0 7 4.5 13 4.5S26 9 29 9" stroke="#6bd3a4" stroke-width="2.6" stroke-linecap="round"/><path d="M3 16c6 0 7 4.5 13 4.5S26 16 29 16" stroke="#39a36b" stroke-width="2.6" stroke-linecap="round"/><path d="M3 23c6 0 7 4.5 13 4.5S26 23 29 23" stroke="#006241" stroke-width="2.6" stroke-linecap="round"/></svg><span>MoneyFlows</span></a>
+    <div class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="mailto:moneyflowapp@proton.me">Contact</a><a href="https://apps.apple.com/us/app/id6760608278">App Store</a></div></div>
+    <p>MoneyFlows is for information and education only and is not investment advice. Prices may be delayed up to about 15 minutes. Past activity does not predict future results.</p>
     <p>This product uses the FRED&reg; API but is not endorsed or certified by the Federal Reserve Bank of St. Louis. FRED&reg; is a registered trademark of the Federal Reserve Bank of St. Louis.</p>
-    <p>Apple, iPhone and App Store are trademarks of Apple Inc. &copy; 2026 MoneyFlows.</p>
+    <p>Apple, iPhone and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. &copy; 2026 MoneyFlows.</p>
   </div>
 </footer>
 <script src="site.js" defer></script>
